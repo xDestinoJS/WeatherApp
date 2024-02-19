@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <head>
+        <title>Weather App</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <img id="bg_image" class="img_hidden"></img>
+
+        <div class="container">
+            <div class="center_div">
+                <div>
+                    <h1 class="title">Weather App</h1>
+                
+                    <div class="location_container">
+                        <div class="location_box">
+                            <input id="location" placeholder="City Name">
+                            <button class="search_btn" onclick="updateWeather()" title="Search"><i class="fas fa-search"></i></button>
+                        </div>
+                        
+                        <button class="search_btn" onclick="geolocate()" title="Geolocate"><i class="fas fa-map-marker-alt"></i></button>
+                    </div>
+                </div>
+                <div class="result_container">
+                    <div class="weather_type">
+                        <h3>Weather</h3>
+                        <span class="loader hidden"></span>
+                        <span id="weather">N/A</span>
+                    </div>
+                    <div class="temperature">
+                        <h3>Temperature</h3>
+                        <span class="loader hidden"></span>
+                        <span id="temperature">N/A</span>
+                    </div>
+                </div>
+
+                <div class="info_container">
+                    Website where you can find out the weather of a town or city.
+                    Click the location pin to use your current location.
+                </div>
+            </div>
+            <div class="extras">   
+                Alejandro Uriel Montelongo and Troy Shakespeare
+            </div>
+        </div>
+    </body>
+
+    <script src="main.js"></script>
+</html>
